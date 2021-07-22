@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather' ,serif;
+  background-color: rgb(214, 242, 255); ;
+
+}
+header{
+  border:0cm;
+  margin: 0%;
+  padding: 0%;
+}
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to right,#ff512f 0%,#dd2476 51% ,#ff512f 100%);
+  margin-top: 10%;
+}
+.whitelogo{
+  filter: invert(1) brightness(0);
+}
+ul{
+  color:white;
+  list-style-type:none;
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  box-shadow: 0 8px 6px -6px rgb(100, 100, 100);
+}
+
+.navbar__brand {
+  width: 100px ;
+}
+
+.navbar__logo {
+  width: 60% ;
+}
+
+
+.button__primary {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51% ,
+    #ff512f 100%
+    );
+    color: #fff ;
+    border: none ;
+    padding: 12px ;
+    border-radius: 6px ;
+
+}
+
+.button__primary:hover {
+  background-image: linear-gradient(to left,#dd2476 0%,#ff512f 91%);
+  cursor: pointer;
+}
+.food__card__description {
+  padding: 15px;
+}
+
+.food__card {
+  background-color: #F9F9F9;
+}
+
+.food__card__image__container {
+  width: 100%;
+}
+
+.food__image {
+  border-radius: 4px 4px 0 0;
+  width: 100%;
+}
+.explore__menu__text {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1d3557;
+}
+
+.container {
+  max-width:100%;
+  padding: 20px;
+  margin:0 auto;
+}
+
+.hero_image_container{
+  width: 100% ;
+}
+
+.hero__image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero__text {
+  font-weight: 700 ;
+  font-size: 32px;
+  margin: 20px 0;
+  color: #0a1729
+}
+
+.email_text{
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-size: 50px;
+  font-weight: 800;
+  color: #1d3557;
+}
+.email_input{
+  display: flex;
+  align-items: left;
+  justify-content:left;
+}
+.holder{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 1000;
+  width:40%;
+  height: 30px;
+  
+  border: 1px solid rgb(247, 35, 35);
+  border-radius: 4px;
+}
+.email_entry{
+  margin-left: 25%;
+}
+.button_primary {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51% ,
+    #ff512f 100%
+    );
+    color: #fff ;
+    border: none ;
+    padding: 12px ;
+    border-radius: 6px ;
+    margin:10px;
+}
+.content_wrapper{
+  width:100%;
+  border-radius: 13px;
+}
+.text_wrapper{
+  width:100%;
+  position: relative;
+}
+.text_wrapper h2{
+  text-align:center;
+  color:white;
+  font-size: 30px;
+  margin-top: -25%;
+  font-family: "Merriweather", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .explore__menu__lists {
+  margin-top: 45px;
+    display: flex;
+    gap: 15px;
+    padding: 0 30px;
+  }
+
+  .explore__menu__container {
+    position: relative;
+  }
+
+  .explore__menu__gradient__bg {
+    padding-top: 100px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      #ff512f 0%,
+       #dd2476 51%,
+       #ff512f 100%
+      );
+    z-index: -3;
+    transform: skewY(-5deg);
+  }
+  .email_input{
+    display: flex;
+    align-items: center;
+  }
+
+  #pizza__card {
+    margin-top: -20px;
+    margin-bottom: 30px;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+
+  .hero__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .holder{
+    margin-top:10px;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .container {
+     max-width: 70%;
+  }
+
+  .explore__menu__lists {
+    gap: 25px;
+  }
+
+   .navbar__brand {
+     width: 150px;
+   }
+
+   .button__primary  {
+     padding: 20px;
+     font-size: 20px;
+   }
+
+   .hero__description {
+     width: 100%;
+   }
+
+   .hero__text {
+     font-size: 50px;
+   }
+
+   .explore__menu__text {
+     font-size: 48px;
+   }
+   .holder{
+    margin-top:10px;
+  }
+}
